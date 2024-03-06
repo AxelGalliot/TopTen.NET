@@ -1,0 +1,16 @@
+<div class="home-container">
+  <app-tabs [tabs]="tabs" (onTabChange)="tabChange($event)"></app-tabs>
+  <!-- Créer une partie -->
+  <div *ngIf="activatedTabIndex == 0" class="home-container-tab">
+    <app-avatarpicker (valueChange)="onAvatarValueChange($event)" initialAvatar="{{avatar}}"></app-avatarpicker>
+    <app-textinput placeholder="Votre nom" (valueChange)="onNameValueChange($event)"></app-textinput>
+    <app-cta label="Créer la partie" (btnClick)="createGroup()"></app-cta>
+  </div>
+  <!-- Rejoindre une partie -->
+  <div *ngIf="activatedTabIndex == 1" class="home-container-tab">
+    <app-avatarpicker (valueChange)="onAvatarValueChange($event)" initialAvatar="{{avatar}}"></app-avatarpicker>
+    <app-textinput placeholder="Votre nom" (valueChange)="onNameValueChange($event)"></app-textinput>
+    <app-textinput placeholder="Code de la partie" (valueChange)="onGroupValueChange($event)"></app-textinput>
+    <app-cta label="Rejoindre la partie" (btnClick)="joinGroup()"></app-cta>
+  </div>
+</div>

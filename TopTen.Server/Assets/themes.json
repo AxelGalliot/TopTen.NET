@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "content": "Content 1 {-} à {+}.",
+    "biggest": "biggest",
+    "smallest":  "smallest"
+  },
+  {
+    "id": 1,
+    "content": "Content 2 {-} à {+}.",
+    "biggest": "biggest",
+    "smallest": "smallest"
+  },
+  {
+    "id": 2,
+    "content": "Content 3 {-} à {+}.",
+    "biggest": "biggest",
+    "smallest": "smallest"
+  },
+  {
+    "id": 3,
+    "content": "Content 4 {-} à {+}.",
+    "biggest": "biggest",
+    "smallest": "smallest"
+  },
+  {
+    "id": 4,
+    "content": "Content 5 {-} à {+}.",
+    "biggest": "biggest",
+    "smallest": "smallest"
+  },
+]

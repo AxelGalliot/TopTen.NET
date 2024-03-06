@@ -1,0 +1,11 @@
+<div class="avatarpicker-container">
+  <div class="avatarpicker-previous" (click)="onPrevious()">
+    <img src="../../../assets/avatarpicker-previous-icon.svg" alt="Avatar précédent"/>
+  </div>
+  <div class="avatarpicker-avatar">
+    <app-svg [name]="avatars[id]" [width]="240" [height]="240"></app-svg>
+  </div>
+  <div class="avatarpicker-next" (click)="onNext()">
+    <img src="../../../assets/avatarpicker-next-icon.svg" alt="Avatar suivant" />
+  </div>
+</div>

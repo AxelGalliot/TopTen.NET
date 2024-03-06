@@ -1,0 +1,7 @@
+<p class="theme" >
+  <ng-container *ngFor="let item of (theme$ | async)">
+    <span *ngIf="item.type == 'text'" class="theme-text">{{item.content}}</span>
+    <span *ngIf="item.type == 'small'" class="theme-small">{{item.content}}</span>
+    <span *ngIf="item.type == 'big'" class="theme-big">{{item.content}}</span>
+  </ng-container>
+</p>

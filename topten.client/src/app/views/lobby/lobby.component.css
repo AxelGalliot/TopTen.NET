@@ -1,0 +1,57 @@
+:host {
+  flex: 1;
+}
+
+.lobby-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  outline: 8px solid #fff;
+  outline-offset: -8px;
+  border-radius: 16px;
+  background-image: linear-gradient(137.2deg, #ffffff0d 0%, #ffffff66 42%, #ffffff1a 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.lobby-player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.lobby-player-name {
+  flex: 1;
+  text-align: left;
+  font-family: 'Poppins Regular';
+  color: white;
+}
+
+.lobby-player-empty-avatar {
+  background: rgba(217, 217, 217, 0.5);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+
+}
+
+.lobby-player-empty-name {
+  flex: 1;
+  background: rgba(217, 217, 217, 0.5);
+  height: 1rem;
+  border-radius: 0.5rem;
+}
+
+.lobby-cta {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

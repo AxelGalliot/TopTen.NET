@@ -1,0 +1,20 @@
+.cta-container{
+
+}
+
+.cta-button {
+  border: none;
+  background: #FFF;
+  color: #219EB5;
+  padding: 16px 48px;
+  border-radius: 16px;
+  font-family: 'Poppins Bold';
+  font-size: 18px;
+  transition: transform .2s;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  box-shadow: 4px 8px 8px 0px #00000026;
+  transform: scale(1.05);
+}

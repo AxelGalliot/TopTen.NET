@@ -1,0 +1,32 @@
+<div style="display: block;height:inherit;">
+  <div style="position:absolute;top:18px;left:80px">
+    <img src="../assets/Logo.png" alt="Logo TopTen" width="160" height="128"/>
+  </div>  
+
+  <!--<app-avatarpicker></app-avatarpicker>
+  <app-textinput placeholder="Votre nom..."></app-textinput>
+  <app-cta label="Test"></app-cta>-->
+
+  <!--<div style="height:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;">
+    <app-lobby></app-lobby> 
+  </div>-->
+  <!--<app-avatar [avatar]="'avatar10'" [size]="32" [isAnswerMode]="true" [isHost]="true" [isCaptain]="true"></app-avatar>-->
+
+  <div *ngIf="!(groupId$ | async); then homeBlock else gameBlock"></div>
+
+  <ng-template #homeBlock>
+    <div style="height:100%;display:flex;flex-direction:row;justify-content:center;align-items:center;">
+      <app-home></app-home>
+    </div>
+  </ng-template>
+
+  <ng-template #gameBlock [ngSwitch]="(state$ | async)">
+    <div *ngSwitchCase="'GameReady'" style="height: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+      <app-lobby></app-lobby>
+    </div>
+
+    <div *ngSwitchCase="'RoundReady'" style="height: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+      <app-round-ready></app-round-ready>
+    </div>
+  </ng-template>
+</div>

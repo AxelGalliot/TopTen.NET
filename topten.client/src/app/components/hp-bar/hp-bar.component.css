@@ -1,0 +1,17 @@
+
+
+.hp-bar-container {
+  outline: 8px solid #fff;
+  outline-offset: -8px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: linear-gradient(137.2deg, #ffffff0d 0%, #ffffff66 42%, #ffffff1a 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+}

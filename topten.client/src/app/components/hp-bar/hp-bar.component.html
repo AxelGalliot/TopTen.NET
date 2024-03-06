@@ -1,0 +1,13 @@
+<div class="hp-bar-container">
+  <ng-container *ngFor="let hp of (hpList$ | async)">
+    <div *ngIf="hp then fullBlock else emptyBlock"></div>
+
+    <ng-template #fullBlock>
+      <app-svg [name]="'red-heart'" [width]="32" [height]="32"></app-svg>
+    </ng-template>
+
+    <ng-template #emptyBlock>
+      <app-svg [name]="'black-heart'" [width]="32" [height]="32"></app-svg>
+    </ng-template>
+  </ng-container>
+</div>

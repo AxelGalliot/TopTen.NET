@@ -1,0 +1,52 @@
+:host{
+    z-index: -1;
+    position: absolute;
+    top: 108px;
+    left: 32px;
+    width: 256px;
+}
+
+.player-bar-container {
+  outline: 8px solid #fff;
+  outline-offset: -8px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-image: linear-gradient(137.2deg, #ffffff0d 0%, #ffffff66 42%, #ffffff1a 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.player-bar-player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.player-bar-player-name {
+  flex: 1;
+  text-align: left;
+  font-family: 'Poppins Regular';
+  color: white;
+}
+
+.player-bar-player-empty-avatar {
+  background: rgba(217, 217, 217, 0.5);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+
+.player-bar-player-empty-name {
+  flex: 1;
+  background: rgba(217, 217, 217, 0.5);
+  height: 1rem;
+  border-radius: 0.5rem;
+}

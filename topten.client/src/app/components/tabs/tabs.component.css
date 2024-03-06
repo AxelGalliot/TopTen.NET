@@ -1,0 +1,49 @@
+.nav-link {
+  font-family: 'Poppins Semi-Bold';
+  color: #808080;
+}
+
+.active {
+  color: #219EB5;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 2px !important;
+  --bs-nav-tabs-border-color: #1678da !important;
+  --bs-nav-tabs-border-radius: 0.375rem;
+}
+
+
+.nav-tabs {
+  background: #F2F2F2;
+  padding: 0;
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-item {
+  padding: 16px 0;
+  flex: 1;
+  cursor: pointer;
+}
+
+.nav-item:not(:has(a.active)) {
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+}
+
+.nav-item:not(:has(a.active)):hover {
+  background: #cdf1f7;
+}
+
+.nav-item:not(:has(a.active)):hover > a{
+  color: #666;
+}
+
+.nav-item:has(a.active){
+    background: #FFF;
+}
+
+

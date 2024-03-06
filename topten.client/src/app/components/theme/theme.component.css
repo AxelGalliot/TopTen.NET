@@ -1,0 +1,17 @@
+.theme {
+    margin: 0;
+    font-family: 'Poppins Regular';
+    font-size: 16px;
+    color: white;
+
+}
+
+.theme-small {
+  font-family: 'Poppins Semi-Bold';
+  color: #6CE771;
+}
+
+.theme-big {
+  font-family: 'Poppins Semi-Bold';
+  color: #FF7070;
+}

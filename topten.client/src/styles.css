@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(162.8deg, #0e778aff 0%, #33c2dcff 100%);
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins Semi-Bold';
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+
+.bottom-cta {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

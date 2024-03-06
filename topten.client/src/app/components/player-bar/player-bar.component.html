@@ -1,0 +1,12 @@
+<div class="player-bar-container">
+  <ng-container *ngFor="let player of (playerList$ | async)">
+    <div *ngIf="player" class="player-bar-player">
+      <app-avatar [avatar]="player.avatar" [size]="48" [isHost]="(host$ | async) == player.id" [isCaptain]="(captain$ | async) == player.id" [isAnswerMode]="true"></app-avatar>
+      <p class="player-bar-player-name">{{player.name}}</p>
+    </div>
+    <div *ngIf="!player" class="player-bar-player">
+      <div class="player-bar-player-empty-avatar"></div>
+      <div class="player-bar-player-empty-name"></div>
+    </div>
+  </ng-container>
+</div>

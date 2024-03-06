@@ -1,0 +1,5 @@
+<div class="avatar-container" [ngStyle]="{'border-radius.px': size / 2}">
+  <app-svg [name]="avatar" [width]="isAnswerMode ? size * 7 / 8 : size" [height]="isAnswerMode ? size * 7 / 8 : size"></app-svg>
+  <app-svg class="avatar-gear" *ngIf="isHost" [name]="'gear'" [width]="size/2" [height]="size/2" [ngStyle]="{'top.px': size * 5/8, 'left.px': size * 5/8}"></app-svg> 
+  <app-svg class="avatar-crown" *ngIf="isCaptain" [name]="'crown'" [width]="size/2" [height]="size/2" [ngStyle]="{'top.px': -size * 5/16, 'left.px': size * 5/8}"></app-svg>
+</div>

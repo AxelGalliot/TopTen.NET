@@ -1,0 +1,22 @@
+:host {
+    flex:1;
+}
+
+.home-container {
+  outline: 8px solid #fff;
+  outline-offset: -8px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.home-container-tab {
+  background-image: linear-gradient(137.2deg, #ffffff0d 0%, #ffffff66 42%, #ffffff1a 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 1.5rem 0;
+}

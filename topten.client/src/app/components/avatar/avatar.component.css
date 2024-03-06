@@ -1,0 +1,26 @@
+:host{
+    display: block;
+    aspect-ratio: 1 / 1;
+}
+
+.avatar-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: white;
+}
+
+.avatar-container-answermode {
+
+}
+
+.avatar-gear {
+    position: absolute;
+}
+
+.avatar-crown {
+  position: absolute;
+  transform: rotate(35deg);
+}

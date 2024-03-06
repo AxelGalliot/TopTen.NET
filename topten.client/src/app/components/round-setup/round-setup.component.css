@@ -1,0 +1,37 @@
+:host{
+    display: block;
+    height: inherit;
+}
+.round-setup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.round-setup-round-number {
+    margin:0;
+    /*position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);*/
+    font-family: 'Poppins Bold';
+    font-size: 48px;
+    color: white;
+}
+
+.round-setup-hp-bar {
+    /*position: absolute; 
+    top: 96px;
+    left: 50%;
+    transform: translate(-50%, 0);*/
+}
+
+.round-setup-info {
+    margin: 0;
+    font-family: 'Poppins Bold';
+    font-size: 28px;
+    color: white;
+}

@@ -1,0 +1,14 @@
+<div class="lobby-container">
+  <ng-container *ngFor="let player of (playerList$ | async)">
+    <div *ngIf="player" class="lobby-player">
+      <app-avatar [avatar]="player.avatar" [size]="48" [isHost]="(host$ | async) == player.id"></app-avatar>
+      <p class="lobby-player-name">{{player.name}}</p>
+      <app-svg [name]="'more'" [width]="32" [height]="32"></app-svg>
+    </div>
+    <div *ngIf="!player" class="lobby-player">
+      <div class="lobby-player-empty-avatar"></div>
+      <div class="lobby-player-empty-name"></div>
+    </div>
+  </ng-container>
+</div>
+<app-cta class="bottom-cta" label="Démarrer la partie" (btnClick)="startGame()"></app-cta>
